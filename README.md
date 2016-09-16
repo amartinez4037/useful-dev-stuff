@@ -1,6 +1,6 @@
 # useful-dev-stuff
 
-### [Bash configuration files](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html) ###
+### [Bash configuration files](http://linux.die.net/man/1/bash) ###
 * Two different files that can be created/edited as preferred
 * .bashrc is executed for interactive non-login shells
   * When you open a new terminal window
@@ -13,7 +13,7 @@ if[-f ~/.bashrc]; then
   source ~/.bashrc
 fi
 ```
-* As an example if you want to see certain information about your machine on login, but not when you open a new window you would put that in .bash_profile. Otherwise you will see it everytime a new terminal window is opened
+* As an example if you want to see certain information about your machine on login, but not when you open a new window you would put that in .bash_profile. Otherwise you will see it everytime a new terminal window is opened.
 * Mac OSX Terminal.app is an exception as it always calls .bash_profile (runs a login shell by default for every new terminal window)
 
 ### Creating an alias ###
@@ -21,7 +21,7 @@ Add/create the following into the .bash_profile/.bashrc file
 
 * Changing a command already used
 ```bash
-alias 'ls='ls -GFh'
+alias ls='ls -GFh'
 ```
 
 * Creating your own command
