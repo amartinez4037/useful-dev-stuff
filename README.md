@@ -1,6 +1,6 @@
-# useful-dev-stuff
+# useful-dev-stuff #
 
-### [Bash configuration files](http://linux.die.net/man/1/bash) ###
+### [Bash Configuration](http://linux.die.net/man/1/bash) ###
 * Two different files that can be created/edited as preferred
 * .bashrc is executed for interactive non-login shells
   * When you open a new terminal window
@@ -16,7 +16,13 @@ fi
 * As an example if you want to see certain information about your machine on login, but not when you open a new window you would put that in .bash_profile. Otherwise you will see it everytime a new terminal window is opened.
 * Mac OSX Terminal.app is an exception as it always calls .bash_profile (runs a login shell by default for every new terminal window)
 
-### Creating an alias ###
+### VIM Configuration ###
+* .vimrc file
+   * [Location](http://stackoverflow.com/questions/10921441/where-is-my-vimrc-file/34005877#34005877) of file
+   * [Example file](https://gist.github.com/joegoggins/8482408)
+   * [Tabs and Spaces](http://vimcasts.org/episodes/tabs-and-spaces/) explanation
+
+### Aliases ###
 Add/create the following into the .bash_profile/.bashrc file
 
 * Changing a command already used
@@ -29,7 +35,7 @@ alias ls='ls -GFh'
 alias dev='ssh uname@ipaddress'
 ```
 
-### Creating a bash script ###
+### Bash Scripting ###
 Add scripts to the bin/ directory
 
 * Need to add bin/ directory to PATH
