@@ -55,6 +55,12 @@ echo -e "\n Push master branch using origin remote: "
 git push origin master
 ```
 
+### Modifying the terminal prompt ($PS1) ###
+* [Hiding cwd](http://askubuntu.com/questions/16728/hide-current-working-directory-in-terminal)
+* [What do you have for your $PS1](www.reddit.com/r/programming/comments/697cu/bash_users_what_do_you_have_for_your_ps1/)
+* [What's your favorite Bash prompt?](http://stackoverflow.com/questions/103857/what-is-your-favorite-bash-prompt)
+
+
 ### Creating a key pair ###
 Create the key in .ssh directory
 
