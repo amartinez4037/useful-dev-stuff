@@ -39,10 +39,10 @@ alias dev='ssh uname@ipaddress'
 Add scripts to the bin/ directory
 
 * Need to add bin/ directory to PATH
- * export PATH=$PATH:~/bin
+```bash
+export PATH=$PATH:~/bin
+```
 * Sample command named push for pushing a project using Git
- * File needs to be executable
-  * chmod +x <file_name>
 ```bash
 #!/bin/bash
 # Shortcut for pushing project to git
@@ -56,6 +56,10 @@ echo -e "\n --Commit with message: $1 "
 git commit -m "$1"
 echo -e "\n Push master branch using origin remote: " 
 git push origin master
+```
+* File needs to be executable
+```bash
+chmod +x <file_name>
 ```
 
 ### Modifying the terminal prompt ($PS1) ###
