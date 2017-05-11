@@ -69,6 +69,11 @@ chmod +x <file_name>
 
 
 ### Creating a key pair ###
-Create the key in .ssh directory
-
-* Two will be created - .pub is the public one
+* Create the key in .ssh directory (~/.ssh)
+```bash
+ssh-keygen -t rsa
+```
+* Key ending in .pub is the public one - copy to the server
+```bash
+ssh-copy-id username@i.p.address
+```
